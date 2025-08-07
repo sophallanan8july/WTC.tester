@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - Skin Care</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="checkout.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">SKIN CARE</a>
+      <a href="categories.html">Categories</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html" class="active">Checkout</a>
+      <a href="auth.html">My Account</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+      <label for="contact">Contact Number:</label><br />
+      <input type="text" id="contact" name="contact" required /><br /><br />
+      <label for="address">Address:</label><br />
+      <input type="text" id="address" name="address" required /><br /><br />
+      <label for="fulfillment">Fulfillment Option:</label><br />
+      <select id="fulfillment" name="fulfillment" required>
+        <option value="">Select an option</option>
+        <option value="Pickup">Pickup</option>
+        <option value="Delivery">Delivery</option>
+      </select><br /><br />
+      <button type="submit">Complete Purchase</button>
+    </form>
+  </main>
+  <footer>
+    <hr />
+    <p>&copy; 2025 Skin Care. All rights reserved by Sophalla Nan.</p>
+  </footer>
+</body>
+</html>
